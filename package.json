@@ -1,0 +1,29 @@
+{
+  "name": "Team-profile-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "assemble": "^0.3.83",
+    "assets": "^3.0.0",
+    "breakpoint-sass": "^2.7.1",
+    "grunt": "^0.4.5",
+    "node-sass": "^4.9.2",
+    "styles": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liimonx/Team-profile-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liimonx/Team-profile-slider/issues"
+  },
+  "homepage": "https://github.com/liimonx/Team-profile-slider#readme"
+}
