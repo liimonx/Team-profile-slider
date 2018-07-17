@@ -14,6 +14,10 @@ body{
         position: relative;
         overflow: hidden;
         box-shadow: 11px 15px 20px #2b054e;
+        .slider{
+            transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+        }
         .slider__control{
             width: 100%;
             height: 90px;
