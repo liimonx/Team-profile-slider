@@ -9,6 +9,8 @@
     "breakpoint-sass": "^2.7.1",
     "grunt": "^0.4.5",
     "node-sass": "^4.9.2",
+    "s": "^0.1.1",
+    "slider": "^1.0.4",
     "styles": "^0.2.1"
   },
   "devDependencies": {},
