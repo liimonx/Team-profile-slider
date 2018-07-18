@@ -18,7 +18,7 @@ const slider = document.querySelector('.slider')
 const sliderImages = document.querySelectorAll('.thumbnail__images img')
 
 css(slider, {
-    width: `${sliderContainer.offsetWidth * 3}px`,
+    width: `${sliderContainer.offsetWidth * sliderImages.length }px`,
     transform: `translateX(-${sliderContainer.offsetWidth}px)`
 })
 // window.addEventListener('load', () =>{
@@ -26,9 +26,9 @@ css(slider, {
         transition: '0.5s cubic-bezier(0.15, 0.56, 0.98, 0.58)',
 
     })
-    createImg('' , 'prev')
-    createImg(`${sliderImages[2].src}` , 'current')
-    createImg('' , 'next')
+    createImg(`` , 'prev', 'append')
+    createImg( `${sliderImages[1].src}` , 'current', 'append')
+    createImg('' , 'next', 'append')
 // })
 
 
