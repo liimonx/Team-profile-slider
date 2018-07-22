@@ -1,5 +1,4 @@
 import css from './function/style'
-import createImg from './function/createImg'
 
 window.addEventListener('load', ()=>{
     const sliderImages = document.querySelectorAll('.thumbnail__images img')
