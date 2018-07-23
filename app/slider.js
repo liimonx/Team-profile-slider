@@ -15,13 +15,29 @@ window.addEventListener('load', ()=>{
             const targetIndex = [...thumbnailImages].findIndex(img => (img.src) == e.target.src)
             const currentIndex = [...thumbnailImages].findIndex(img => (img.parentNode.dataset.slide ) == 'current' )
             
+
+            sliderImages.forEach(simg => {
+                css(simg, {
+                    transform : 'scale(1)',
+                    opacity: '0'
+                })
+            })
+
+
             if ( currentIndex < targetIndex) {
                 sliderImages[`${(csm/sliderContainer.offsetWidth) + 1}`].src = e.target.src
-
+                css( sliderImages[`${(csm/sliderContainer.offsetWidth) + 1}`],{
+                    opacity: '1',
+                    transform : 'scale(1.5)'
+                })
                 slide('next')
             } else {
                 slide('prev')
                 sliderImages[`${(csm/sliderContainer.offsetWidth)}`].src = e.target.src
+                css( sliderImages[`${(csm/sliderContainer.offsetWidth)}`],{
+                    opacity: '1',
+                    transform : 'scale(1.5)'
+                })
             }
 
             thumbnailImages.forEach(img => {
