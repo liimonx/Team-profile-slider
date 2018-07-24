@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+* Hide only visually, but have it available for screen readers: h5bp.com/v
+*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+  * Extends the .visuallyhidden class to allow the element to be focusable
+  * when navigated to via the keyboard: h5bp.com/p
+  */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 100%; }
+
+body {
+  background-color: #fff;
+  color: #505050;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+img, svg {
+  max-width: 100%; }
+
+body {
+  background: #493E56; }
+
+.invisible_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .invisible_container .slider__container {
+    width: 60vw;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 11px 15px 20px #2b054e; }
+    .invisible_container .slider__container .slider__control {
+      width: 100%;
+      height: 90px;
+      bottom: 0;
+      position: absolute;
+      background: #ffffff; }
+      .invisible_container .slider__container .slider__control .thumbnail__images {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
+        .invisible_container .slider__container .slider__control .thumbnail__images div {
+          height: 50px;
+          width: 50px;
+          margin-left: 15px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; }
+          .invisible_container .slider__container .slider__control .thumbnail__images div img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            filter: grayscale(100%);
+            transition: 0.5s; }
+            .invisible_container .slider__container .slider__control .thumbnail__images div img:active {
+              transform: scale(0.9); }
+          .invisible_container .slider__container .slider__control .thumbnail__images div.active img, .invisible_container .slider__container .slider__control .thumbnail__images div:hover img {
+            filter: grayscale(0); }
+      .invisible_container .slider__container .slider__control .underline {
+        content: '';
+        bottom: 0;
+        width: 50px;
+        height: 5px;
+        background: #ffe865;
+        position: absolute; }
+      .invisible_container .slider__container .slider__control .member_about {
+        width: 300px;
+        height: 150px;
+        background: #493E56;
+        z-index: 22;
+        position: absolute;
+        top: -50%;
+        right: 5%; }
+        .invisible_container .slider__container .slider__control .member_about .about__content {
+          color: #ffffff;
+          padding: 25px; }
+          .invisible_container .slider__container .slider__control .member_about .about__content p {
+            font-size: 12px;
+            line-height: 15px; }
+          .invisible_container .slider__container .slider__control .member_about .about__content h3 {
+            font-weight: bold;
+            line-height: 30px; }
+        .invisible_container .slider__container .slider__control .member_about .controler {
+          width: 60px;
+          height: 30px;
+          top: -30px;
+          right: 0;
+          position: absolute;
+          color: #ffffff;
+          display: flex;
+          background: #493E56; }
+          .invisible_container .slider__container .slider__control .member_about .controler div {
+            padding: 5px 9.5px;
+            font-size: 16px;
+            cursor: pointer; }
+            .invisible_container .slider__container .slider__control .member_about .controler div:hover, .invisible_container .slider__container .slider__control .member_about .controler div:focus {
+              background: #ffe865; }
