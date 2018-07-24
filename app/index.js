@@ -19,7 +19,7 @@ const sliderImages = document.querySelectorAll('.thumbnail__images img')
 
 css(slider, {
     width: `${sliderContainer.offsetWidth * sliderImages.length }px`,
-    transition: '0.7s cubic-bezier(.25, 0, .1, 1)',
+    transition: 'all 0.7s cubic-bezier(0.67, -0.4, 0.97, 0.97) 0s',
 })
 
 sliderImages.forEach(img => createImg(img))

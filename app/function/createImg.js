@@ -8,7 +8,7 @@ const createImg = (i)=>{
     const div = document.createElement('div')
         img.src = i.src
         css(img, {
-            transition: '0.7s cubic-bezier(.25, 0, .1, 1)'
+            transition: 'all 0.6s cubic-bezier(0.67, -0.4, 0.97, 0.97) 0s'
         })
         div.appendChild(img)
         css(div,{
